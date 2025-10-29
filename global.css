@@ -1,0 +1,282 @@
+html { height: 100%; }
+body {
+	background: url('/web/20181109220757im_/http://shereendesign.com/images/home01_bg.jpg'); 
+	color: #141414;
+	margin: 0;
+	padding: 0;
+	text-align: center; /*Tricks IE into centering the wrapper div*/
+}
+
+a {text-decoration: none;}
+a:link {color: #4298B4;}
+a:hover {
+	color: #4298B4;
+	text-decoration:underline;
+}
+a:visited {color: #6099B6;}
+
+#wrapper {
+	width: 950px;
+	margin: 0 auto;
+	padding: 0 20px;
+	text-align: left; /*For IE5 - Aligning text in the wrapper to the left gets it back in the proper position*/
+	background-image:url(/web/20181109220757im_/http://shereendesign.com/images/wrapper_bg.jpg);
+	background-repeat:no-repeat;
+	background-position:center top;
+	overflow:hidden;
+	position:relative;
+}
+
+/*  Basic paragraph styling  */
+
+p {
+	margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;
+}
+
+img { border:none; }
+
+/*  Main heading text  */
+
+h1 {
+	font: 400 24px/1.5em Arial, Helvetica, sans-serif;	
+	color: #BFBFBF;
+	margin: 0;
+	padding: 30px 38px 0 46px;
+	text-decoration: none; 
+}
+
+/*  Main heading paragraph with links to content  */
+
+h2 {
+	font: italic 400 16px Georgia, "Times New Roman", Times, serif;
+	color: #BFBFBF;
+	margin: 8px 38px 0 44px;
+	padding: 0;
+}
+
+/*  Featured Work title  */
+
+h3 {
+	font: normal 14px Arial, Helvetica, sans-serif;
+	color: #999999;
+	text-decoration: none;
+	padding: 4px;
+	margin: 0;
+	margin-bottom:6px;
+	background: url('/web/20181109220757im_/http://shereendesign.com/images/h2_bg.jpg') no-repeat center left;
+	width:200px;
+	float:left;
+	clear:both;
+}
+
+/*  Footer headings - Services, Get in Touch, Testimonials */
+
+h4 {
+	font: normal 14px Arial, Helvetica, sans-serif;
+	color: #CCCCCC;
+	text-decoration: none;
+	padding: 0 0 6px 0;
+	margin: 0 0 16px 0;
+	border-bottom: 1px solid #221E1C;
+}
+
+/*  Footer sub titles - Specialising in, Request a Quote */
+
+h5 {
+	font: normal 14px Arial, Helvetica, sans-serif;
+	color: #787878;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+	margin-bottom:10px;
+	width: 200px;
+	float:left;
+}
+
+/*  Top header - logo and navigation  */
+
+#header {
+	width: 942px;
+	height:84px;
+	background: url('/web/20181109220757im_/http://shereendesign.com/images/header_bg.jpg') no-repeat top left;
+	margin:0;
+	padding:0;
+}
+
+ul#mainNav {
+	width: 342px;
+	margin-top: 36px;
+	padding-bottom:5px;
+	list-style:none;
+	float:right;
+}
+
+#mainNav a {
+	font: italic normal 18px "Times New Roman", Times, serif;
+	color: #999999;
+	text-decoration: none;
+	padding-bottom:5px;
+}
+
+#mainNav li {
+	font: italic normal 18px "Times New Roman", Times, serif;
+	color: #CCCCCC;
+	text-decoration: none;
+	padding: 0;
+	padding-bottom:5px;
+	margin-right: 28px;
+	display:inline;
+}
+
+#mainNav li a:hover {
+	color: #CCCCCC;
+	background-image: url('/web/20181109220757im_/http://shereendesign.com/images/sketch_line.jpg');
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+
+.logo {
+	float: left;
+	width:500px;
+}
+
+/*  Footer   */
+
+#paintEdge {
+	margin:0;
+	padding:0;
+	width:100%;
+	height:11px;
+	background:url('/web/20181109220757im_/http://shereendesign.com/images/footer_edge.jpg') repeat-x left top;
+	clear:both;
+	font-size:0;
+}
+
+#footer{
+	height: 344px;
+	width: 100%;
+	background: #000 url('/web/20181109220757im_/http://shereendesign.com/images/footer_paint2.jpg') no-repeat bottom center;
+	padding:0;
+	margin: 0;
+	clear: both; 
+}
+
+div.footerContainer {
+	width: 950px;
+	margin: 0 auto;
+	padding: 18px 0 0 0;
+	text-align: left;
+	clear:both;
+}
+
+/*  Skills & Services  */
+
+div.services {
+	width: 293px;
+	float: left;
+	margin:0 25px 0 0;
+	padding: 0;
+	clear:both;
+}
+
+.services li {
+	list-style: none;
+	font: normal 11px/1.5em Arial, Helvetica, sans-serif;
+	color: #7A7A7A;
+	padding: 0 0 0 18px;
+	margin: 0 0 6px 0;
+	background-image: url('/web/20181109220757im_/http://shereendesign.com/images/list_tick.jpg');
+	background-repeat: no-repeat;
+	background-position: 0px 2px;
+	clear:both;
+}
+
+ul, li {
+	margin-left:0;
+	padding-left:0;
+}
+
+div.getintouch {
+	width: 293px;
+	margin:0 25px 0 0;
+	padding: 0;
+	float:right;	
+}
+
+div.testimonials {
+	width: 293px;
+	margin:0;
+	padding: 0;
+	padding-right:18px;
+	float: right;
+}
+
+.comment {
+	font: italic 16px/1.5em Georgia, "Times New Roman", Times, serif;
+	color: #747474;
+	padding-bottom: 16px;
+}
+
+q:before, q:after { content: ""; }
+
+.TestimonialName {
+	font: 400 12px Arial, Helvetica, sans-serif;
+	color:#C0C0C0;
+}
+
+.footerParagraph {
+	font: normal 11px/1.8em Arial, Helvetica, sans-serif;
+	color: #7A7A7A;
+	margin:0;
+	padding: 0 0 12px 0;
+	clear:both;
+}
+
+/*  Copyright  */
+
+#copyright {
+	width: 400px;
+	margin:0;
+	padding:0;
+	padding-top:34px;
+	float:left;
+}
+
+.copyright {
+	font-size: 11px;
+	font-weight: normal;
+	color: #464646;
+	line-height: 1.5em;
+	padding:0;
+	margin:0;
+}
+
+#backtotop {
+	float: right;
+	margin: 5px 18px 0px 280px;
+	padding:0;
+	width:100px
+}
+
+img.arrow {margin: 0 8px 0 0;}
+
+/*
+     FILE ARCHIVED ON 22:07:57 Nov 09, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 19:06:48 Oct 22, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.557
+  exclusion.robots: 0.021
+  exclusion.robots.policy: 0.01
+  esindex: 0.012
+  cdx.remote: 34.232
+  LoadShardBlock: 266.7 (3)
+  PetaboxLoader3.datanode: 303.546 (5)
+  PetaboxLoader3.resolve: 412.405 (3)
+  load_resource: 500.81 (2)
+*/

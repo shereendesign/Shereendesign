@@ -1,0 +1,166 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+/*  Prototype JavaScript framework
+ *  (c) 2005 Sam Stephenson <sam@conio.net>
+ *  Prototype is freely distributable under the terms of an MIT-style license.
+ *  For details, see the Prototype web site: http://prototype.conio.net/
+/*--------------------------------------------------------------------------*/
+
+//note: modified & stripped down version of prototype, to be used with moo.fx by mad4milk (http://moofx.mad4milk.net).
+
+var Class = {
+	create: function() {
+		return function() {
+			this.initialize.apply(this, arguments);
+		}
+	}
+}
+
+Object.extend = function(destination, source) {
+	for (property in source) destination[property] = source[property];
+	return destination;
+}
+
+Function.prototype.bind = function(object) {
+	var __method = this;
+	return function() {
+		return __method.apply(object, arguments);
+	}
+}
+
+Function.prototype.bindAsEventListener = function(object) {
+var __method = this;
+	return function(event) {
+		__method.call(object, event || window.event);
+	}
+}
+
+function $() {
+	if (arguments.length == 1) return get$(arguments[0]);
+	var elements = [];
+	$c(arguments).each(function(el){
+		elements.push(get$(el));
+	});
+	return elements;
+
+	function get$(el){
+		if (typeof el == 'string') el = document.getElementById(el);
+		return el;
+	}
+}
+
+if (!window.Element) var Element = new Object();
+
+Object.extend(Element, {
+	remove: function(element) {
+		element = $(element);
+		element.parentNode.removeChild(element);
+	},
+
+	hasClassName: function(element, className) {
+		element = $(element);
+		if (!element) return;
+		var hasClass = false;
+		element.className.split(' ').each(function(cn){
+			if (cn == className) hasClass = true;
+		});
+		return hasClass;
+	},
+
+	addClassName: function(element, className) {
+		element = $(element);
+		Element.removeClassName(element, className);
+		element.className += ' ' + className;
+	},
+  
+	removeClassName: function(element, className) {
+		element = $(element);
+		if (!element) return;
+		var newClassName = '';
+		element.className.split(' ').each(function(cn, i){
+			if (cn != className){
+				if (i > 0) newClassName += ' ';
+				newClassName += cn;
+			}
+		});
+		element.className = newClassName;
+	},
+
+	cleanWhitespace: function(element) {
+		element = $(element);
+		$c(element.childNodes).each(function(node){
+			if (node.nodeType == 3 && !/\S/.test(node.nodeValue)) Element.remove(node);
+		});
+	},
+
+	find: function(element, what) {
+		element = $(element)[what];
+		while (element.nodeType != 1) element = element[what];
+		return element;
+	}
+});
+
+var Position = {
+	cumulativeOffset: function(element) {
+		var valueT = 0, valueL = 0;
+		do {
+			valueT += element.offsetTop  || 0;
+			valueL += element.offsetLeft || 0;
+			element = element.offsetParent;
+		} while (element);
+		return [valueL, valueT];
+	}
+};
+
+document.getElementsByClassName = function(className) {
+	var children = document.getElementsByTagName('*') || document.all;
+	var elements = [];
+	$c(children).each(function(child){
+		if (Element.hasClassName(child, className)) elements.push(child);
+	});  
+	return elements;
+}
+
+//useful array functions
+Array.prototype.iterate = function(func){
+	for(var i=0;i<this.length;i++) func(this[i], i);
+}
+if (!Array.prototype.each) Array.prototype.each = Array.prototype.iterate;
+
+function $c(array){
+	var nArray = [];
+	for (var i=0;i<array.length;i++) nArray.push(array[i]);
+	return nArray;
+}
+
+}
+/*
+     FILE ARCHIVED ON 22:20:07 Nov 09, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 19:06:48 Oct 22, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.682
+  exclusion.robots: 0.026
+  exclusion.robots.policy: 0.011
+  esindex: 0.013
+  cdx.remote: 21.867
+  LoadShardBlock: 110.154 (3)
+  PetaboxLoader3.datanode: 220.084 (5)
+  load_resource: 510.701 (2)
+  PetaboxLoader3.resolve: 324.347 (2)
+*/

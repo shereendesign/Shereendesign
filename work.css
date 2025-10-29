@@ -1,0 +1,92 @@
+.workHeader {
+	width: 932px;
+	height: 183px;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 6px;
+	background-image: url('/web/20181109212752im_/http://shereendesign.com/images/work_header_bg.jpg');
+	clear: both;
+}
+
+h2.workSubTitle {
+	font: italic normal 18px/1.5em Georgia, "Times New Roman", Times, serif;
+	color: #769D91;
+	margin: 0;
+	padding: 12px 38px 0 44px;
+}
+
+#workContainer {
+	width: 949px;
+	margin:0;
+	padding:0;
+	float:left;
+	clear:both;
+	padding-bottom:28px;
+}
+
+.figure {
+	width:288px;
+	height:22em;
+	float:left;
+	margin:0 28px 20px 0;
+	overflow:hidden;
+}
+
+.photo img {
+	background:url('/web/20181109212752im_/http://shereendesign.com/images/portfolio_bg_thumb.jpg') no-repeat top left;
+	padding:14px 11px 14px 11px;
+}
+
+.workTitle {
+	font: normal 14px/1.5em Arial, Helvetica, sans-serif;
+	color: #C57E2D;
+	margin: 4px 0 2px 0;	
+}
+
+.workTypeTitle {
+	font: italic normal 12px/1.5em Georgia, "Times New Roman", Times, serif;
+	color: #6A6A6A;
+	margin: 0 0 8px 0;
+}
+
+.workDesc {
+	font: normal 11px/1.7em Arial, Helvetica, sans-serif;
+	color: #999999;
+	padding: 4px 0 6px 0;
+	margin:0;
+}
+.workLink {
+	font: normal 11px/1.7em Arial, Helvetica, sans-serif;
+	color: #5C5C5C;
+	padding: 4px 0 6px 0;
+	margin:0;
+}
+
+.workThanks {
+	font: italic normal 11px/1.7em Georgia, "Times New Roman", Times, serif;
+	color: #444444;
+	padding: 18px 0 6px 0;
+	width:930px;
+	border-top: 1px solid #282828;
+	margin:0;
+}
+/*
+     FILE ARCHIVED ON 21:27:52 Nov 09, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 19:06:49 Oct 22, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.501
+  exclusion.robots: 0.018
+  exclusion.robots.policy: 0.008
+  esindex: 0.011
+  cdx.remote: 78.448
+  LoadShardBlock: 1057.495 (3)
+  PetaboxLoader3.resolve: 997.513 (5)
+  PetaboxLoader3.datanode: 841.593 (5)
+  load_resource: 951.878 (2)
+*/

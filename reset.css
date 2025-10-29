@@ -1,0 +1,47 @@
+/* =INITIAL 
+   v2.1, by Faruk Ates - www.kurafire.net
+   Addendum by Robert Nyman - www.robertnyman.com 
+   Addition by Christian Montoya - www.christianmontoya.net */
+
+/* Neutralize styling: 
+   Elements we want to clean out entirely: */
+html, body, form, fieldset {
+        margin: 0;
+        padding: 0;
+        font: 100%/120% Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* Neutralize styling: 
+   Elements with a vertical margin: */
+h1, h2, h3, h4, h5, h6, p, pre,
+blockquote, ul, ol, dl, address {
+        margin: 1em 0;
+        padding: 0;
+}
+
+/* Apply left margin:
+   Only to the few elements that need it: */
+li, dd, blockquote {
+        margin-left: 1em;
+}
+
+/*
+     FILE ARCHIVED ON 22:03:04 Nov 09, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 19:06:48 Oct 22, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.475
+  exclusion.robots: 0.019
+  exclusion.robots.policy: 0.009
+  esindex: 0.011
+  cdx.remote: 86.225
+  LoadShardBlock: 290.8 (3)
+  PetaboxLoader3.datanode: 362.844 (5)
+  PetaboxLoader3.resolve: 365.423 (3)
+  load_resource: 669.095 (2)
+*/
